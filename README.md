@@ -20,8 +20,11 @@ src/build_graph.py    Create schema and load CSVs
 src/validate_data.py  Validate CSV primary keys and relationship references
 src/run_queries.py    Run the 5 main training queries
 src/context_retrieval.py  Onboarding evidence pack builder
+src/graph_chat_server.py  Serve the graph with a local chat/refinement panel
+src/adk_vertex_invoke.py  Invoke the Google ADK agent from the command line
 src/visualize_graph.py  Export an interactive HTML graph viewer
 src/visualize_schema.py  Export a schema-level node and edge viewer
+kg_adk_agent/        Google ADK agent for Vertex/Gemini-backed graph chat
 output/               Generated KuzuDB directory after running build
 ```
 
@@ -37,10 +40,45 @@ python src/run_queries.py
 python src/context_retrieval.py
 python src/visualize_graph.py
 python src/visualize_schema.py
+python src/graph_chat_server.py
 ```
 
 Open `output/policy_context_graph.html` in a browser to explore the record-level graph.
 Open `output/knowledge_graph_schema.html` to see how node types connect through edge types.
+Open `http://127.0.0.1:8765` after starting `src/graph_chat_server.py` to ask questions and optionally save the question, retrieved evidence, and answer trail back into the graph.
+
+## Google ADK and Vertex AI
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+For local Gemini API mode, set `GOOGLE_API_KEY`.
+
+For Google Cloud / Vertex-style Agent Platform mode, authenticate with Application Default Credentials and set:
+
+```bash
+gcloud auth application-default login
+export GOOGLE_GENAI_USE_ENTERPRISE=True
+export GOOGLE_CLOUD_PROJECT="your-project-id"
+export GOOGLE_CLOUD_LOCATION="us-central1"
+```
+
+Older ADK versions may use the equivalent `GOOGLE_GENAI_USE_VERTEXAI=True`.
+
+Run the ADK agent directly:
+
+```bash
+adk run kg_adk_agent
+```
+
+Or invoke it once from the command line:
+
+```bash
+python src/adk_vertex_invoke.py "What evidence blocks Atlas Robotics approval?"
+```
 
 ## Learning outcomes
 

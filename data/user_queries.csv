@@ -2,3 +2,8 @@ query_id,user_role,question,timestamp
 Q001,KYC Maker,Atlas Robotics Inc is a high-risk US corporate. What evidence is required and what approval blockers remain?,2026-07-11T10:00:00+05:30
 Q002,Policy Analyst,Show me the policy source for the Atlas Robotics source of wealth requirement.,2026-07-11T10:15:00+05:30
 Q003,Control Owner,Which critical requirements do not have a preventive control?,2026-07-11T10:30:00+05:30
+Q004,Knowledge Graph Chat,What evidence blocks Atlas Robotics approval?,2026-07-11T21:06:07+05:30
+Q005,Knowledge Graph Chat,Which missing documents should operations request from the client?,2026-07-11T21:06:37+05:30
+Q006,Knowledge Graph Chat,What simplified evidence is accepted for the India SME case?,2026-07-11T21:08:00+05:30
+Q007,Knowledge Graph Chat,Tell me abot R008,2026-07-11T21:10:37+05:30
+Q008,Knowledge Graph Chat,What is global KYC Onboarding standard,2026-07-11T21:12:05+05:30

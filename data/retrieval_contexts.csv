@@ -2,3 +2,8 @@ context_id,query_id,strategy,rank,summary
 CTX001,Q001,case_filter_country_client_risk,1,Retrieved global profile ownership screening and US high-risk corporate evidence requirements for Atlas Robotics Inc.
 CTX002,Q002,source_citation_path,1,Retrieved the policy citation path from requirement R004 to section C004 in appendix PD002.
 CTX003,Q003,critical_control_coverage,1,Compared critical onboarding requirements to preventive controls before rollout.
+CTX004,Q004,chatbot_keyword_evidence_path,1,Retrieved 5 evidence paths for: What evidence blocks Atlas Robotics approval?
+CTX005,Q005,chatbot_keyword_evidence_path,1,Retrieved 4 evidence paths for: Which missing documents should operations request from the client?
+CTX006,Q006,chatbot_keyword_evidence_path,1,Retrieved 5 evidence paths for: What simplified evidence is accepted for the India SME case?
+CTX007,Q007,chatbot_keyword_evidence_path,1,Retrieved 1 evidence paths for: Tell me abot R008
+CTX008,Q008,chatbot_keyword_evidence_path,1,Retrieved 5 evidence paths for: What is global KYC Onboarding standard
