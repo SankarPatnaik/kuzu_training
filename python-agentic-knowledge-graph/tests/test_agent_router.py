@@ -14,3 +14,9 @@ def test_query_router() -> None:
     number, query = select_query(get_domain("cycle"), "Show the four-step cycle")
     assert number == 5
     assert query.title == "Four-step cycles"
+
+
+def test_yoga_benefit_question_routes_to_benefits_query() -> None:
+    number, query = select_query(get_domain("yoga"), "Which poses improve flexibility?")
+    assert number == 2
+    assert query.title == "Pose benefits"
