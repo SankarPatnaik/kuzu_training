@@ -19,6 +19,7 @@ queries/              Reusable Cypher examples
 src/build_graph.py    Create schema and load CSVs
 src/run_queries.py    Run the 5 main training queries
 src/context_retrieval.py  GraphRAG-style evidence pack builder
+src/visualize_graph.py  Export an interactive HTML graph viewer
 output/               Generated KuzuDB directory after running build
 ```
 
@@ -31,7 +32,10 @@ pip install -r requirements.txt
 python src/build_graph.py --reset
 python src/run_queries.py
 python src/context_retrieval.py
+python src/visualize_graph.py
 ```
+
+Open `output/policy_context_graph.html` in a browser to explore the graph.
 
 ## Learning outcomes
 
