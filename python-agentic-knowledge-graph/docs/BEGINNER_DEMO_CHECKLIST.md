@@ -18,6 +18,7 @@ pytest
 Use this flow when you want students to learn from a notebook:
 
 ```bash
+python -m jupyter lab notebooks/fraud_kuzu_tables_relationships_demo.ipynb
 python -m jupyter lab notebooks/fraud_knowledge_graph_demo.ipynb
 ```
 
@@ -27,7 +28,7 @@ Backup command if Jupyter is not available during class:
 python scripts/fraud_demo.py
 ```
 
-The notebook covers schema inspection, dataset validation, Kuzu loading, graph visualization, Cypher retrieval, a meaningful fraud-prioritization outcome, and a small graph-agent chatbot cell.
+The first notebook covers manual Kuzu node-table creation, relationship-table creation, node insertion, edge creation, graph queries, and visualization. The second notebook covers schema inspection, dataset validation, Kuzu loading, graph visualization, Cypher retrieval, a meaningful fraud-prioritization outcome, and a small graph-agent chatbot cell.
 
 ## Demo flow
 

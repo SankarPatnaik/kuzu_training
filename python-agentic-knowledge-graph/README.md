@@ -53,14 +53,25 @@ akg cycles
 
 ## Fraud Jupyter notebook demo
 
-For a beginner-friendly classroom demo, install the notebook extras and open the fraud notebook:
+For beginner-friendly classroom demos, install the notebook extras:
 
 ```bash
 pip install -r requirements-demo.txt
+```
+
+Start with the Kuzu table-and-relationship lab when students are new to graph databases:
+
+```bash
+python -m jupyter lab notebooks/fraud_kuzu_tables_relationships_demo.ipynb
+```
+
+Then open the full agentic fraud demo:
+
+```bash
 python -m jupyter lab notebooks/fraud_knowledge_graph_demo.ipynb
 ```
 
-The notebook walks through the fraud schema, validates `data/fraud.json`, builds `output/fraud.kuzu`, visualizes the graph, runs Cypher queries, creates a fraud-prioritization outcome, and includes a small graph-agent question cell.
+The first notebook manually creates Kuzu node tables, relationship tables, nodes, and edges for `data/fraud.json`. The second notebook validates `data/fraud.json`, builds `output/fraud.kuzu`, visualizes the graph, runs Cypher queries, creates a fraud-prioritization outcome, and includes a small graph-agent question cell.
 
 If you need a non-notebook backup during a live class:
 

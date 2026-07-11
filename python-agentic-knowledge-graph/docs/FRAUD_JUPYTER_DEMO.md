@@ -1,6 +1,9 @@
 # Fraud Jupyter Demo Guide
 
-Use this guide when teaching beginners from `notebooks/fraud_knowledge_graph_demo.ipynb`.
+Use this guide when teaching beginners from:
+
+- `notebooks/fraud_kuzu_tables_relationships_demo.ipynb`
+- `notebooks/fraud_knowledge_graph_demo.ipynb`
 
 ## Goal
 
@@ -27,6 +30,7 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements-demo.txt
+python -m jupyter lab notebooks/fraud_kuzu_tables_relationships_demo.ipynb
 python -m jupyter lab notebooks/fraud_knowledge_graph_demo.ipynb
 ```
 
@@ -37,23 +41,25 @@ py -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r requirements-demo.txt
+python -m jupyter lab notebooks/fraud_kuzu_tables_relationships_demo.ipynb
 python -m jupyter lab notebooks/fraud_knowledge_graph_demo.ipynb
 ```
 
 ## Live demo flow
 
-1. Open the notebook and explain the business question.
-2. Run setup/import cells.
-3. Show the node and relationship schema tables.
-4. Translate each relationship into a sentence.
-5. Validate the JSON dataset.
-6. Display the graph visualization before building Kuzu.
-7. Build `output/fraud.kuzu`.
-8. Run queries 1, 5, and 8.
-9. Run the outcome query and discuss the analyst-review recommendation.
-10. Run the graph agent examples.
-11. Use the optional mini chatbot cell for student questions.
-12. Save `output/fraud_knowledge_graph.html` as a standalone backup visualization.
+1. Open `fraud_kuzu_tables_relationships_demo.ipynb`.
+2. Explain the node tables and relationship tables.
+3. Execute the manual `CREATE NODE TABLE` statements.
+4. Execute the manual `CREATE REL TABLE` statements.
+5. Insert fraud nodes from `data/fraud.json`.
+6. Create relationships by matching source and target primary keys.
+7. Query and visualize the manually built graph.
+8. Open `fraud_knowledge_graph_demo.ipynb`.
+9. Validate the JSON dataset and build `output/fraud.kuzu`.
+10. Run queries 1, 5, and 8.
+11. Run the outcome query and discuss the analyst-review recommendation.
+12. Run the graph agent examples and optional mini chatbot cell.
+13. Save `output/fraud_knowledge_graph.html` as a standalone backup visualization.
 
 ## Schema explanation
 
