@@ -1,4 +1,4 @@
-document_id,country_code,rule
+document_id,code,rule
 PD001,GLOBAL,baseline
 PD002,US,appendix
 PD003,CA,appendix

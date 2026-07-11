@@ -81,12 +81,15 @@ def execute_file(conn: "kuzu.Connection", path: Path) -> None:
 
 def copy_table(conn: "kuzu.Connection", table: str, csv_name: str) -> None:
     csv_path = (DATA_DIR / csv_name).as_posix()
-    conn.execute(f'COPY {table} FROM "{csv_path}"')
+    conn.execute(f'COPY {table} FROM "{csv_path}" (HEADER=true)')
 
 
 def build(db_path: Path, reset: bool) -> None:
     if reset and db_path.exists():
-        shutil.rmtree(db_path)
+        if db_path.is_dir() and not db_path.is_symlink():
+            shutil.rmtree(db_path)
+        else:
+            db_path.unlink()
     db_path.parent.mkdir(parents=True, exist_ok=True)
     db = kuzu.Database(str(db_path))
     conn = kuzu.Connection(db)
