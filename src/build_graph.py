@@ -1,4 +1,4 @@
-"""Build the KuzuDB policy knowledge graph and context graph from CSV files.
+"""Build the KuzuDB KYC onboarding knowledge graph from CSV files.
 
 Usage:
     python src/build_graph.py --reset

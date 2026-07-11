@@ -1,5 +1,5 @@
 use_case_id,name,business_goal,owner,maturity
-UC001,Policy AI Question Generation,Convert policy text into requirement questions by region client type and risk,Policy AI Team,Live
-UC002,KYC Outreach Template AI,Simplify requirement descriptions and translate outreach emails,KYC Operations,Build
-UC003,Document Migration Intelligence,Classify and map historical documents to modernization profile needs,Modernization Team,Build
-UC004,Requirement Control Coverage,Find missing controls for generated AI questions,Data Governance,Prototype
+UC001,Atlas Robotics High-Risk Corporate Onboarding,Decide what evidence and approval gates are required before Atlas Robotics Inc can be onboarded,KYC Operations,Live
+UC002,Atlas Evidence Outreach Pack,Prepare a client-facing missing evidence checklist for Atlas Robotics Inc,KYC Operations,Build
+UC003,Northwind Maple Periodic Review,Verify Canada corporate registration signer and address evidence before review closure,Modernization Team,Build
+UC004,Critical Obligation Control Coverage,Confirm every critical onboarding obligation has a preventive control before operational rollout,Financial Crime Governance,Prototype

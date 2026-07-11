@@ -1,11 +1,11 @@
 requirement_id,control_id,mapping_type
-R001,CTRL003,review
+R001,CTRL003,four_eyes_review
 R002,CTRL004,mandatory_evidence
 R003,CTRL005,approval_gate
-R004,CTRL002,applicability_guardrail
+R004,CTRL002,policy_applicability
 R004,CTRL004,mandatory_evidence
 R005,CTRL004,mandatory_evidence
-R007,CTRL002,applicability_guardrail
-R009,CTRL001,traceability
-R010,CTRL002,applicability_guardrail
-R010,CTRL006,pii_guardrail
+R007,CTRL002,policy_applicability
+R009,CTRL001,decision_citation
+R010,CTRL002,policy_applicability
+R010,CTRL006,export_redaction

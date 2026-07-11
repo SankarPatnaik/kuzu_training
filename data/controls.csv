@@ -1,7 +1,7 @@
 control_id,name,control_type,severity,description
-CTRL001,Policy Traceability Check,Preventive,High,Every generated requirement must cite source document section and version.
-CTRL002,Regional Applicability Guardrail,Preventive,Critical,Validate country region client type and risk rating before rendering requirements.
-CTRL003,Maker Checker Review,Detective,High,Human maker checker review confirms extracted questions before operations use.
-CTRL004,Evidence Completeness Rule,Preventive,High,Block approval when mandatory evidence is missing.
-CTRL005,Screening Completion Gate,Preventive,Critical,Ensure sanctions and adverse media screening has passed before approval.
-CTRL006,PII Masking Before LLM,Preventive,Critical,Mask sensitive identifiers before sending data to an external or internal LLM.
+CTRL001,Decision Citation Check,Preventive,High,Each onboarding action must cite the policy document section and version used by the reviewer.
+CTRL002,Policy Applicability Check,Preventive,Critical,Validate country client type and risk rating before applying regional onboarding obligations.
+CTRL003,Four Eyes Review,Detective,High,A second reviewer confirms profile evidence ownership screening and approval notes before completion.
+CTRL004,Evidence Completeness Gate,Preventive,High,Block approval when mandatory documents or ownership evidence are missing from the case file.
+CTRL005,Screening Clearance Gate,Preventive,Critical,Block onboarding until sanctions PEP and adverse media results are cleared or escalated.
+CTRL006,Sensitive Data Redaction Check,Preventive,High,Redact national IDs tax IDs and signer personal data from exports used outside the case team.

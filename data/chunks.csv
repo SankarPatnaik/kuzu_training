@@ -1,11 +1,11 @@
 chunk_id,document_id,sequence,text,section,token_count
-C001,PD001,1,Every client profile must include legal name registered address country of formation and client type classification.,Profile Basics,22
-C002,PD001,2,Beneficial ownership must be collected and validated where ownership or control thresholds are met.,Ownership,16
-C003,PD001,3,Sanctions screening and adverse media review must be completed before profile approval and at periodic review.,Screening,17
-C004,PD002,1,For high risk US corporate clients collect ownership structure control person identity and source of wealth rationale.,US Corporate High Risk,18
-C005,PD002,2,Outreach must request missing formation certificate tax identifier and authorized signer evidence when not available from trusted sources.,US Evidence,18
-C006,PD003,1,Canada corporate profiles require provincial registration number authorized signer validation and business address evidence.,Canada Evidence,14
-C007,PD004,1,Financial institutions with correspondent banking exposure require nested relationship review sanctions controls and AML program evidence.,EU FI Due Diligence,16
-C008,PD005,1,Low risk India SME profiles may use GST registration business address and owner PAN evidence for simplified review.,India SME Simplified,17
-C009,PD001,4,Policy questions must be traceable to the paragraph section and source document version used by the AI system.,Traceability,17
-C010,PD002,3,Any AI generated requirement must preserve regional applicability and should not mix US appendix obligations with global core obligations.,AI Guardrail,19
+C001,PD001,1,Every onboarding case must record legal entity name registration identifier registered address country of formation client type expected products and risk rating before review.,Profile Intake,23
+C002,PD001,2,For legal entity customers collect ownership percentages and identify each natural person with twenty five percent or more ownership or effective control.,Ownership and Control,22
+C003,PD001,3,Sanctions PEP and adverse media screening must be completed and cleared or escalated before onboarding approval.,Screening Clearance,15
+C004,PD002,1,For Atlas Robotics Inc collect ownership chart control person identity source of wealth rationale EIN confirmation and Delaware formation certificate.,Atlas Enhanced Due Diligence,19
+C005,PD002,2,If evidence is missing operations must request Delaware certificate IRS EIN letter board resolution for signer ownership chart and source of wealth memo.,Atlas Outreach Pack,22
+C006,PD003,1,Northwind Maple Ltd requires provincial registration number authorized signer validation and business address evidence before periodic review closure.,Canada Periodic Review,17
+C007,PD004,1,Baltic Correspondent Bank GmbH requires nested relationship review AML program evidence sanctions controls and correspondent banking senior approval.,EU FI Due Diligence,17
+C008,PD005,1,Saffron Foods LLP may use GST registration business address and owner PAN evidence for low risk SME onboarding.,India SME Simplified,16
+C009,PD001,4,Every onboarding decision must link each required action to the policy document section and version supporting it.,Decision Lineage,16
+C010,PD002,3,Before approval validate case country client type and risk rating so only matching global and regional policies are applied.,Policy Applicability Check,17

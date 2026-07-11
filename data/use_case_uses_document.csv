@@ -1,7 +1,6 @@
 use_case_id,document_id,usage_type
 UC001,PD001,core_policy
-UC001,PD002,regional_appendix
-UC001,PD003,regional_appendix
-UC002,PD002,outreach_template
-UC003,PD003,migration_rule
+UC001,PD002,atlas_appendix
+UC002,PD002,missing_evidence_pack
+UC003,PD003,canada_periodic_review
 UC004,PD001,control_coverage

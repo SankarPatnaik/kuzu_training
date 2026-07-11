@@ -1,4 +1,4 @@
-// KuzuDB schema for Policy AI knowledge graph + context graph.
+// KuzuDB schema for a KYC onboarding knowledge graph and evidence retrieval graph.
 // Run with: python src/build_graph.py --reset
 
 CREATE NODE TABLE PolicyDocument(

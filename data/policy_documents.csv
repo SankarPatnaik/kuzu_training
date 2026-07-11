@@ -1,6 +1,6 @@
 document_id,title,source,region,client_type,risk_rating,version,effective_date,text_summary
-PD001,Global KYC Core Policy,Confluence,Global,All,All,v2026.1,2026-01-15,Defines baseline KYC profile evidence beneficial ownership due diligence sanctions screening and periodic review expectations.
-PD002,US Corporate Appendix,SharePoint,US,Corporate,High,v2026.2,2026-03-01,Adds US specific high risk corporate due diligence outreach ownership control persons and adverse media evidence.
-PD003,Canada Corporate Appendix,SharePoint,Canada,Corporate,Medium,v2026.1,2026-02-10,Defines Canadian corporate document standards authorized signatory validation and periodic refresh.
-PD004,EU FI Appendix,Confluence,EU,FinancialInstitution,High,v2026.1,2026-02-20,Adds financial institution correspondent banking controls sanctions exposure and nested relationship review.
-PD005,India SME Appendix,SharePoint,India,SME,Low,v2026.1,2026-04-05,Defines simplified requirements for low risk SME clients with GST and business registration validation.
+PD001,Global KYC Onboarding Standard,PolicyHub,Global,All,All,v2026.1,2026-01-15,Defines baseline legal entity profile ownership screening and approval evidence required before client onboarding.
+PD002,US High-Risk Corporate Onboarding Appendix,PolicyHub,US,Corporate,High,v2026.2,2026-03-01,Adds evidence and approval steps for Atlas Robotics Inc a synthetic high-risk US corporate onboarding case.
+PD003,Canada Corporate Periodic Review Appendix,PolicyHub,Canada,Corporate,Medium,v2026.1,2026-02-10,Defines Canadian corporate registration signer validation and address refresh requirements for Northwind Maple Ltd.
+PD004,EU Correspondent Banking Appendix,PolicyHub,EU,FinancialInstitution,High,v2026.1,2026-02-20,Defines nested relationship AML program and sanctions control evidence for Baltic Correspondent Bank GmbH.
+PD005,India SME Simplified Onboarding Appendix,PolicyHub,India,SME,Low,v2026.1,2026-04-05,Defines simplified GST business address and owner PAN evidence accepted for Saffron Foods LLP.

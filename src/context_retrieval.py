@@ -1,9 +1,9 @@
-"""Tiny GraphRAG-style context retriever over KuzuDB.
+"""Tiny onboarding evidence retriever over KuzuDB.
 
 This is deliberately simple and deterministic so engineers can understand the pattern:
 1. Convert user intent into graph filters.
 2. Retrieve requirements plus source chunks and controls.
-3. Assemble an evidence pack for an LLM prompt or a rules-based answer.
+3. Assemble an evidence pack for a reviewer or a rules-based answer.
 """
 from __future__ import annotations
 
@@ -60,8 +60,8 @@ def retrieve_policy_context(conn: "kuzu.Connection", f: RetrievalFilter):
 
 def make_prompt(evidence_pack) -> str:
     lines = [
-        "You are a KYC policy assistant. Answer only from the evidence below.",
-        "Return: required questions, required evidence, controls, and citations.",
+        "You are a KYC onboarding assistant. Answer only from the evidence below.",
+        "Return: required evidence, approval blockers, controls, and citations.",
         "",
         "Evidence:",
     ]
@@ -79,11 +79,11 @@ def make_prompt(evidence_pack) -> str:
 
 
 def main(db_path: Path) -> None:
-    conn = kuzu.Connection(kuzu.Database(str(db_path)))
+    conn = kuzu.Connection(kuzu.Database(str(db_path), read_only=True))
     filters = RetrievalFilter(country_code="US", client_type_id="CORP", risk_id="HIGH")
     evidence = retrieve_policy_context(conn, filters)
     print(evidence)
-    print("\n--- Prompt assembled for LLM ---\n")
+    print("\n--- Evidence brief assembled for reviewer ---\n")
     print(make_prompt(evidence))
 
 

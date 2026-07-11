@@ -1,4 +1,4 @@
 query_id,user_role,question,timestamp
-Q001,KYC Maker,For a high risk US corporate client what questions and evidence should I request?,2026-07-11T10:00:00+05:30
-Q002,Policy Analyst,Show me the source policy behind the US corporate source of wealth question.,2026-07-11T10:15:00+05:30
+Q001,KYC Maker,Atlas Robotics Inc is a high-risk US corporate. What evidence is required and what approval blockers remain?,2026-07-11T10:00:00+05:30
+Q002,Policy Analyst,Show me the policy source for the Atlas Robotics source of wealth requirement.,2026-07-11T10:15:00+05:30
 Q003,Control Owner,Which critical requirements do not have a preventive control?,2026-07-11T10:30:00+05:30

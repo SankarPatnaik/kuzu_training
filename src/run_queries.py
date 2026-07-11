@@ -28,7 +28,7 @@ def print_result(result, title: str) -> None:
 
 
 def main(db_path: Path) -> None:
-    conn = kuzu.Connection(kuzu.Database(str(db_path)))
+    conn = kuzu.Connection(kuzu.Database(str(db_path), read_only=True))
 
     q1 = """
     MATCH (d:PolicyDocument)-[:APPLIES_TO_COUNTRY]->(country:Country),
@@ -42,7 +42,7 @@ def main(db_path: Path) -> None:
            r.priority AS priority, r.normalized_question AS question
     ORDER BY priority, req_id;
     """
-    print_result(conn.execute(q1), "Q1. Requirements for a high-risk US Corporate client")
+    print_result(conn.execute(q1), "Q1. Decision checklist for Atlas Robotics Inc")
 
     q2 = """
     MATCH (r:Requirement)-[ev:REQUIREMENT_FROM_CHUNK]->(c:Chunk)<-[:HAS_CHUNK]-(d:PolicyDocument)
@@ -51,7 +51,7 @@ def main(db_path: Path) -> None:
            d.title AS source_policy, d.version AS version, c.section AS section,
            c.text AS evidence_text, ev.evidence_score AS evidence_score;
     """
-    print_result(conn.execute(q2), "Q2. Explainability path for requirement R004")
+    print_result(conn.execute(q2), "Q2. Policy citation path for Atlas enhanced due diligence")
 
     q3 = """
     MATCH (r:Requirement)-[:MAPPED_TO_CONTROL]->(ctrl:Control)
@@ -60,7 +60,7 @@ def main(db_path: Path) -> None:
            ctrl.name AS mapped_control, ctrl.control_type AS control_type, ctrl.severity AS severity
     ORDER BY critical_req;
     """
-    print_result(conn.execute(q3), "Q3. Critical requirements mapped to controls")
+    print_result(conn.execute(q3), "Q3. Critical onboarding requirements mapped to controls")
 
     q4 = """
     MATCH (uc:UseCase)-[:USE_CASE_USES_DOCUMENT]->(d:PolicyDocument)-[:GENERATES_REQUIREMENT]->(r:Requirement)-[:IMPLEMENTED_IN]->(s:System)
@@ -69,18 +69,18 @@ def main(db_path: Path) -> None:
            s.name AS system, s.owner AS system_owner
     ORDER BY policy, req_id;
     """
-    print_result(conn.execute(q4), "Q4. Use case lineage: Policy AI -> documents -> requirements -> systems")
+    print_result(conn.execute(q4), "Q4. Use case lineage: Atlas case -> documents -> requirements -> systems")
 
     q5 = """
-    MATCH (q:UserQuery)-[:QUERY_RETRIEVES_CONTEXT]->(ctx:RetrievalContext)-[:CONTEXT_SUPPORTS_REQUIREMENT]->(r:Requirement),
-          (ctx)-[:CONTEXT_USES_CHUNK]->(chunk:Chunk)<-[:HAS_CHUNK]-(doc:PolicyDocument)
+    MATCH (q:UserQuery)-[:QUERY_RETRIEVES_CONTEXT]->(ctx:RetrievalContext)-[support:CONTEXT_SUPPORTS_REQUIREMENT]->(r:Requirement)-[:REQUIREMENT_FROM_CHUNK]->(chunk:Chunk)<-[:HAS_CHUNK]-(doc:PolicyDocument)
     WHERE q.query_id = 'Q001'
     RETURN q.question AS user_question, ctx.strategy AS retrieval_strategy,
-           r.requirement_id AS req_id, r.normalized_question AS generated_question,
+           support.rank AS retrieval_rank,
+           r.requirement_id AS req_id, r.normalized_question AS required_action,
            doc.title AS source_policy, chunk.section AS evidence_section
-    ORDER BY req_id;
+    ORDER BY retrieval_rank, req_id;
     """
-    print_result(conn.execute(q5), "Q5. Context graph: retrieved evidence used to ground an answer")
+    print_result(conn.execute(q5), "Q5. Evidence retrieved for an onboarding case answer")
 
 
 if __name__ == "__main__":

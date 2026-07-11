@@ -3,6 +3,6 @@ T001,Beneficial Ownership,Ownership and control person requirements
 T002,Sanctions Screening,Sanctions and adverse media obligations
 T003,Client Profile,Core identity and classification fields
 T004,Outreach Evidence,Documents requested from client or internal sources
-T005,Traceability,Ability to explain source policy paragraph and version
-T006,AI Guardrail,Rules preventing hallucination and wrong regional mix
+T005,Decision Lineage,Source policy section and version behind each onboarding action
+T006,Policy Applicability,Country client type and risk checks before approval
 T007,Correspondent Banking,Enhanced due diligence for FI relationships

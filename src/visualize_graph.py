@@ -214,7 +214,7 @@ def write_visualization(db_path: Path, output_path: Path, height: str) -> tuple[
     if not db_path.exists():
         raise SystemExit(f"Database not found at {db_path}. Run python src/build_graph.py --reset first.")
 
-    conn = kuzu.Connection(kuzu.Database(str(db_path)))
+    conn = kuzu.Connection(kuzu.Database(str(db_path), read_only=True))
     graph = nx.MultiDiGraph()
     load_nodes(conn, graph)
     load_edges(conn, graph)

@@ -1,7 +1,7 @@
 use_case_id,system_id,usage_type
-UC001,SYS001,generation
-UC001,SYS006,graph_store
-UC002,SYS002,ui_preview
+UC001,SYS001,decision_workbench
+UC001,SYS006,evidence_graph
+UC002,SYS002,outreach_tasks
 UC003,SYS004,source_documents
-UC003,SYS005,classification
-UC004,SYS006,analysis
+UC003,SYS003,case_closure
+UC004,SYS006,control_coverage_analysis
