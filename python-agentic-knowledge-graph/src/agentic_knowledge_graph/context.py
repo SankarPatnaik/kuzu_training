@@ -44,11 +44,28 @@ def select_query(spec: DomainSpec, question: str) -> tuple[int, QuerySpec]:
         return number, spec.queries[number - 1]
 
     keyword_to_query = {
-        "benefit": 2, "body": 3, "advanced": 4, "instructor": 6, "studio": 7,
-        "indicator": 2, "source": 4, "coverage": 10, "two-step": 3,
-        "three-step": 4, "four-step": 5, "route": 8, "season": 7,
-        "environment": 6, "related": 3, "organization": 4, "location": 5,
-        "skill": 10, "expert": 10,
+        "benefit": 2,
+        "flexibility": 2,
+        "balance": 2,
+        "strength": 2,
+        "body": 3,
+        "advanced": 4,
+        "instructor": 6,
+        "studio": 7,
+        "indicator": 2,
+        "source": 4,
+        "coverage": 10,
+        "two-step": 3,
+        "three-step": 4,
+        "four-step": 5,
+        "route": 8,
+        "season": 7,
+        "environment": 6,
+        "related": 3,
+        "organization": 4,
+        "location": 5,
+        "skill": 10,
+        "expert": 10,
     }
     for keyword, number in keyword_to_query.items():
         if keyword in text and number <= len(spec.queries):
