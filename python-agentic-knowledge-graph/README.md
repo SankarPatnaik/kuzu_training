@@ -2,7 +2,6 @@
 
 A Python-first teaching repository for building knowledge graphs, context graphs, GraphRAG retrieval, and simple graph agents with KuzuDB.
 
-This project recreates the **learning scope** of [`vishalmysore/agenticknowledgegraph`](https://github.com/vishalmysore/agenticknowledgegraph) in Python. It is an independent implementation: the architecture is reusable, the datasets are synthetic, and the examples are organized as one Python package rather than separate Java classes.
 
 ## What engineers learn
 
