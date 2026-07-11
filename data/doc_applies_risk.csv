@@ -1,0 +1,6 @@
+document_id,risk_id,rule
+PD001,ALL,baseline
+PD002,HIGH,appendix
+PD003,MED,appendix
+PD004,HIGH,appendix
+PD005,LOW,appendix

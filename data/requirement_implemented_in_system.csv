@@ -1,0 +1,11 @@
+requirement_id,system_id,implementation_status
+R001,SYS002,Implemented
+R002,SYS002,Implemented
+R003,SYS003,Implemented
+R004,SYS001,Implemented
+R005,SYS002,InProgress
+R006,SYS003,Planned
+R007,SYS003,Planned
+R008,SYS002,Planned
+R009,SYS006,Implemented
+R010,SYS001,Implemented

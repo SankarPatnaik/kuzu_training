@@ -1,0 +1,5 @@
+client_type_id,name,description
+ALL,All,Applicable to all client types
+CORP,Corporate,Legal entity corporate customer
+FI,FinancialInstitution,Bank broker or other regulated financial institution
+SME,SME,Small or medium enterprise client

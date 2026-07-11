@@ -1,0 +1,7 @@
+system_id,name,system_type,owner,description
+SYS001,KYC AI Suite,AI Application,Policy AI Team,Reads policy and generates normalized requirement questions.
+SYS002,KYC Operational Portal,Workflow UI,KYC Operations,Displays questions preview and outreach templates for operations.
+SYS003,Fenergo,Client Lifecycle Platform,Modernization Team,Strategic KYC workflow and profile system.
+SYS004,Documentum,DMS,Content Services,Stores historical client documents.
+SYS005,DMC,Document Classification Service,Document AI Team,Classifies and extracts metadata from KYC documents.
+SYS006,KuzuDB Context Graph,Embedded Graph,Data Engineering Team,Stores policy requirement evidence control and retrieval context graph.

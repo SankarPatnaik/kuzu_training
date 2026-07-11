@@ -1,0 +1,4 @@
+answer_id,context_id,groundedness_score
+A001,CTX001,0.91
+A002,CTX002,0.95
+A003,CTX003,0.86

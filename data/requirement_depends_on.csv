@@ -1,0 +1,7 @@
+from_requirement_id,to_requirement_id,dependency_type
+R004,R002,extends
+R005,R004,evidence_for
+R010,R009,requires_traceability
+R007,R003,extends
+R006,R001,extends
+R008,R001,extends

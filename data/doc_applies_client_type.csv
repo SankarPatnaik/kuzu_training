@@ -1,0 +1,6 @@
+document_id,client_type_id,rule
+PD001,ALL,baseline
+PD002,CORP,appendix
+PD003,CORP,appendix
+PD004,FI,appendix
+PD005,SME,appendix

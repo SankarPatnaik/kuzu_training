@@ -1,0 +1,5 @@
+use_case_id,name,business_goal,owner,maturity
+UC001,Policy AI Question Generation,Convert policy text into requirement questions by region client type and risk,Policy AI Team,Live
+UC002,KYC Outreach Template AI,Simplify requirement descriptions and translate outreach emails,KYC Operations,Build
+UC003,Document Migration Intelligence,Classify and map historical documents to modernization profile needs,Modernization Team,Build
+UC004,Requirement Control Coverage,Find missing controls for generated AI questions,Data Governance,Prototype

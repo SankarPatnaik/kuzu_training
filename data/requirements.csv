@@ -1,0 +1,11 @@
+requirement_id,description,normalized_question,region,client_type,risk_rating,priority
+R001,Capture legal name address country of formation and client type,What basic profile fields are required for the client?,Global,All,All,High
+R002,Collect and validate beneficial ownership or control persons,Who owns or controls the customer and what evidence validates it?,Global,All,All,High
+R003,Complete sanctions and adverse media screening before approval,Has screening been completed before profile approval?,Global,All,All,High
+R004,For high risk US corporates collect ownership structure control person identity and source of wealth rationale,What enhanced due diligence is needed for a high risk US corporate?,US,Corporate,High,Critical
+R005,Request missing formation certificate tax identifier and authorized signer evidence,Which documents must be requested during outreach?,US,Corporate,High,High
+R006,Validate Canadian provincial registration number and authorized signer,What Canada-specific corporate evidence is required?,Canada,Corporate,Medium,Medium
+R007,Review nested relationships and AML program evidence for FI correspondent banking,What FI correspondent banking due diligence is needed?,EU,FinancialInstitution,High,Critical
+R008,Use GST registration business address and owner PAN for simplified SME review,What simplified evidence is accepted for India SME low risk?,India,SME,Low,Medium
+R009,Preserve source document paragraph and version for every generated policy question,How can the AI system explain where each question came from?,Global,All,All,High
+R010,Prevent mixing appendix obligations across region client type and risk,How do we stop wrong regional requirements from entering the UI?,US,Corporate,High,Critical

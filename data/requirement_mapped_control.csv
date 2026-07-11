@@ -1,0 +1,11 @@
+requirement_id,control_id,mapping_type
+R001,CTRL003,review
+R002,CTRL004,mandatory_evidence
+R003,CTRL005,approval_gate
+R004,CTRL002,applicability_guardrail
+R004,CTRL004,mandatory_evidence
+R005,CTRL004,mandatory_evidence
+R007,CTRL002,applicability_guardrail
+R009,CTRL001,traceability
+R010,CTRL002,applicability_guardrail
+R010,CTRL006,pii_guardrail

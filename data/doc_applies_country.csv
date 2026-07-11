@@ -1,0 +1,6 @@
+document_id,country_code,rule
+PD001,GLOBAL,baseline
+PD002,US,appendix
+PD003,CA,appendix
+PD004,EU,appendix
+PD005,IN,appendix

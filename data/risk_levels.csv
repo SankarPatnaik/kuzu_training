@@ -1,0 +1,5 @@
+risk_id,name,score
+ALL,All,0
+LOW,Low,1
+MED,Medium,2
+HIGH,High,3

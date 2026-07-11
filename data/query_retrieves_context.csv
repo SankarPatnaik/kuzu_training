@@ -1,0 +1,4 @@
+query_id,context_id,latency_ms
+Q001,CTX001,142
+Q002,CTX002,95
+Q003,CTX003,110

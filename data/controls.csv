@@ -1,0 +1,7 @@
+control_id,name,control_type,severity,description
+CTRL001,Policy Traceability Check,Preventive,High,Every generated requirement must cite source document section and version.
+CTRL002,Regional Applicability Guardrail,Preventive,Critical,Validate country region client type and risk rating before rendering requirements.
+CTRL003,Maker Checker Review,Detective,High,Human maker checker review confirms extracted questions before operations use.
+CTRL004,Evidence Completeness Rule,Preventive,High,Block approval when mandatory evidence is missing.
+CTRL005,Screening Completion Gate,Preventive,Critical,Ensure sanctions and adverse media screening has passed before approval.
+CTRL006,PII Masking Before LLM,Preventive,Critical,Mask sensitive identifiers before sending data to an external or internal LLM.
