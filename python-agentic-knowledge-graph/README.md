@@ -51,12 +51,33 @@ akg build cycle --reset
 akg cycles
 ```
 
+## Fraud Jupyter notebook demo
+
+For a beginner-friendly classroom demo, install the notebook extras and open the fraud notebook:
+
+```bash
+pip install -r requirements-demo.txt
+python -m jupyter lab notebooks/fraud_knowledge_graph_demo.ipynb
+```
+
+The notebook walks through the fraud schema, validates `data/fraud.json`, builds `output/fraud.kuzu`, visualizes the graph, runs Cypher queries, creates a fraud-prioritization outcome, and includes a small graph-agent question cell.
+
+If you need a non-notebook backup during a live class:
+
+```bash
+python scripts/fraud_demo.py
+```
+
+It writes a standalone visualization to `output/fraud_knowledge_graph.html`.
+
 ## Repository structure
 
 ```text
 python-agentic-knowledge-graph/
 ├── data/                         # Five synthetic graph datasets
 ├── docs/TEACHING_GUIDE.md        # Instructor-ready lesson plan
+├── notebooks/                    # Jupyter demos for live teaching
+├── scripts/                      # Backup demo runners
 ├── src/agentic_knowledge_graph/
 │   ├── agent.py                  # Observe → retrieve → reason → answer loop
 │   ├── cli.py                    # Command-line interface
@@ -65,6 +86,7 @@ python-agentic-knowledge-graph/
 │   ├── db.py                     # Kuzu connection and result helpers
 │   ├── domains.py                # Schemas and 50 progressive queries
 │   ├── loader.py                 # Build and populate each graph
+│   ├── visualization.py          # HTML/SVG helpers for notebook demos
 │   └── validation.py             # Dataset integrity checks
 └── tests/                        # Unit tests independent of Kuzu runtime
 ```
